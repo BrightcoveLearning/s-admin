@@ -2,8 +2,10 @@
   <h1>{{ page.title }}</h1>
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
+    {% if site.product_short == "Video Cloud" %}
     <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="4052428130001">&nbsp;</div>
     <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+        {% endif %}
     <p>The User Management page manages the users who are authorized to use the Studio. Note that to access the User Management page, you must be a user with the Administrator role.</p>
     <p>To access the User Management page:</p>
     <ol class="bcls-tasklist-restart">
@@ -15,7 +17,7 @@
       <li>Last Name, First Name</li>
       <li>Email address</li>
       <li>Role - Standard or Administrator</li>
-      <li>Module Access - Each module the user has access to will display a green check mark (<img alt="" src="/assets/images/admin/node14054-green-check-icon.png" />)</li>
+      <li>Module Access - Each module the user has access to will display a green check mark (<img alt="" src="/assets/images/s-admin-img/node14054-green-check-icon.png" />)</li>
       <li>Last Login - The last date and time the user logged in to {{ site.product }}. This is the last login for all {{ site.product }} accounts, not just the current account</li>
     </ul>
     {% if site.product_short == "Video Cloud" %}
